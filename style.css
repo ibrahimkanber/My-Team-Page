@@ -2,17 +2,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
 
+body{
+    display:grid;
+    place-items: center;
+    margin-top:40px;
+    border:1px solid red;
+    
+}
+
+
+.main-container{
+    
+    margin-top: 80px;
+    display:grid;
+    grid-template-areas:"K L L"
+                        "A B C"
+                        "D E F";
+    /* background-color: bisque; */
+    
+    grid-row-gap: 1rem;
+    grid-column-gap: 3.5rem;
+    /* border:1px solid red; */
+    
+ 
+}
+.left{
+    grid-area:K;
+    font-size:1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.right{
+    grid-area: L;
+    justify-self: end;
+    font-size:1.1rem;
+}
+
 
 .person{
     display:flex;
-    border:1px solid red;
+    /* border:1px solid red; */
     width: fit-content;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size:30px ;
+    font-size:1rem ;
+    /* background-color: aqua; */
+
 }
 
+
 .person img{
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 40vh;
 }
 
 
@@ -21,6 +61,33 @@
     padding-left: 8px;
     writing-mode: vertical-lr;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size:20px ;
+    font-size:0.8rem ;
     
+}
+
+.person1{
+    
+    grid-area: A;
+}
+
+.person2{
+    grid-area: B;
+    margin-top:7rem;
+}
+
+.person3{
+    grid-area: C;
+}
+
+.person4{
+    grid-area: D;
+}
+
+.person5{
+    grid-area: E;
+    margin-top:7rem;
+}
+
+.person6{
+    grid-area: F;
 }
