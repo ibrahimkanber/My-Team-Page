@@ -2,18 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
 
+
+
 body{
     display:grid;
     place-items: center;
-    margin-top:40px;
-    border:1px solid red;
+   
     
 }
 
 
+
+
 .main-container{
     
-    margin-top: 80px;
+    margin-top: 10vh;
     display:grid;
     grid-template-areas:"K L L"
                         "A B C"
@@ -33,6 +36,7 @@ body{
 }
 
 .right{
+    
     grid-area: L;
     justify-self: end;
     font-size:1.1rem;
@@ -90,4 +94,55 @@ body{
 
 .person6{
     grid-area: F;
+}
+
+
+@media(max-width:1000px){
+    .main-container{
+        display:grid;
+        grid-template-areas:"K K"
+                            "L L"
+                            "A B"
+                            "C D"
+                            "E F";
+    }
+    .right{
+        justify-self: start;
+    }
+    .person{
+        margin-top: 0;
+    }
+
+    .person:nth-of-type(2n){
+        margin-top:7rem;
+    }
+}
+
+@media(max-width:500px){
+    .main-container{
+        display:grid;
+        grid-template-areas:"K"
+                            "L"
+                            "A"
+                            "B"
+                            "C" "D"
+                            "E" "F";
+    }
+    .right{
+        justify-self: start;
+    }
+    .person{
+        margin-top: 0;
+        justify-self: center;
+    }
+
+    .person:nth-of-type(2n){
+        margin-top:0;
+    }
+
+    .left,.right{
+        text-align: center;
+    }
+
+
 }
