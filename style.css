@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+
+.person{
+    display:flex;
+    border:1px solid red;
+    width: fit-content;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:30px ;
+}
+
+.person img{
+    border-radius: 5px;
+}
+
+
+
+.job-position{
+    padding-left: 8px;
+    writing-mode: vertical-lr;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:20px ;
+    
+}
